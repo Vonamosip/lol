@@ -1,0 +1,91 @@
+.result-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px;
+  max-width: 264px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px 0px rgb(34, 34, 34);
+  padding: 31px;
+  overflow: hidden;
+}
+
+.result-cardunderline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #02f567;
+  height: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.result-cardimg {
+  background-color: #C4C4C4;
+  height: 123px;
+  width: 223px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result-cardicons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  width: 100%;
+  margin-top: 31px;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11.72px;
+  text-align: left;
+  font-family: Roboto;
+}
+
+.result-cardimg-text {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.result-cardimg-text img {
+  max-width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.result-cardtext {
+  color: #4F4F4F;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 31px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: right;
+}
+
+.result-cardbutton {
+  margin-top: 31px;
+  width: 120px;
+  height: 32px;
+  background-color: #2F80ED;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: Roboto;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px 0px #2F80ED;
+}
