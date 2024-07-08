@@ -4,7 +4,7 @@
           <a href="localhost:4200"><img src="icons/logo.png" alt="" class="search-image"></a>
           <input type="text" class="search-input" placeholder="What are you want to find out?">
           <button class="search-button">Search</button>
-          <button class="search-settings"><img src="icons/Vector.png" alt=""></button>
+          <button class="search-settings" (click)="toggleVisible()"><img src="icons/Vector.png" alt=""></button>
       </div>
       <div class="login-container">
           <p class="login-name">Your name</p>
@@ -12,3 +12,6 @@
       </div>
   </div>
 </header>
+@if(visible){
+  <app-filter></app-filter>
+}
