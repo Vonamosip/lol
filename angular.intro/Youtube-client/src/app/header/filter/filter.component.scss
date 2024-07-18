@@ -15,9 +15,10 @@
   color: #929292;
   margin-right: 20px;
   margin-bottom: 0;
+
 }
 
-.sort-menu-item{
+.sort-menu-item-1{
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
@@ -26,6 +27,18 @@
   color: #2F80ED;
   margin-right: 25px;
   text-decoration: underline;
+  cursor: pointer;
+}
+.sort-menu-item-2{
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  text-align: left;
+  color: #2F80ED;
+  margin-right: 25px;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .sort-menu-item-3{

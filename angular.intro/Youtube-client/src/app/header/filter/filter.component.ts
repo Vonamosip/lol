@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './filter.component.scss'
 })
 export class FilterComponent {
+  @Output() sortByDate = new EventEmitter<void>();
+  @Output() sortByViewCount = new EventEmitter<void>();
 
 }

@@ -11,7 +11,15 @@ import { FilterComponent } from "./filter/filter.component";
 export class HeaderComponent {
   visible = false;
 
-  toggleVisible(){
-    this.visible = !this.visible
+  toggleVisible() {
+    this.visible = !this.visible;
+  }
+
+  onSortByDate() {
+    console.log('Sort by Date triggered');
+  }
+
+  onSortByViewCount() {
+    console.log('Sort by View Count triggered');
   }
 }

@@ -1,35 +1,39 @@
-<div class="result-card_container">
-@for (item of statistics; track item; let i = $index){
-    <div class="result-card">
-      <div class="result-cardimg">
-        <img [src]="imageUrl[i]" alt="Your Image">
-      </div>
-      <div class="result-cardicons">
-        <div class="result-cardimg-text">
-          <img src="icons/viewed.png" alt="views">
-          {{ item.viewCount | numberShortener }}
+  <app-filter
+  (sortByDate)="sortByDate()"
+  (sortByViewCount)="sortByViews()"
+></app-filter>
+  <div class="result-card_container">
+  @for (item of videoCards  ; track item; let i = $index){
+      <div class="result-card">
+        <div class="result-cardimg">
+          <img [src]="item.imageUrl" alt="Your Image">
         </div>
-        <div class="result-cardimg-text">
-          <img src="icons/liked.png" alt="likes">
-          {{ item.likeCount | numberShortener }}
+        <div class="result-cardicons">
+          <div class="result-cardimg-text">
+            <img src="icons/viewed.png" alt="views">
+            {{ item.statistics.viewCount | numberShortener }}
+          </div>
+          <div class="result-cardimg-text">
+            <img src="icons/liked.png" alt="likes">
+            {{ item.statistics.likeCount | numberShortener }}
+          </div>
+          <div class="result-cardimg-text">
+            <img src="icons/dislike.png" alt="dislikes">
+            {{ item.statistics.dislikeCount | numberShortener }}
+          </div>
+          <div class="result-cardimg-text">
+            <img src="icons/Group 9.png" alt="commentCount">
+            {{ item.statistics.commentCount | numberShortener }}
+          </div>
         </div>
-        <div class="result-cardimg-text">
-          <img src="icons/dislike.png" alt="dislikes">
-          {{ item.dislikeCount | numberShortener }}
+        <div class="result-cardtext">
+          Kuji Podcast # {{ i + 1 }}
         </div>
-        <div class="result-cardimg-text">
-          <img src="icons/Group 9.png" alt="commentCount">
-          {{ item.commentCount | numberShortener }}
+        <button class="result-cardbutton">
+          more...
+        </button>
+        <div class="result-card__underline" [style.background-color]="getStatusColor(item.publishedAt)">
         </div>
       </div>
-      <div class="result-cardtext">
-        Kuji Podcast # {{ i + 1 }}
-      </div>
-      <button class="result-cardbutton">
-        more...
-      </button>
-      <div class="result-card__underline" [style.background-color]="getStatusColor(date[i])">
-      </div>
-    </div>
-}
+  }
 

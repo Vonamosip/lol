@@ -1,7 +1,9 @@
-export interface statistics {
-  "commentCount": number,
-  "dislikeCount": number,
-  "favoriteCount": number,
-  "likeCount": number,
-  "viewCount": number
+export interface FilteredSearchResult {
+  title: string;
+  description: string;
+  publishedAt: string;
+  viewCount: string;
+  likeCount: string;
+  dislikeCount: string;
+  commentCount: string;
 }
