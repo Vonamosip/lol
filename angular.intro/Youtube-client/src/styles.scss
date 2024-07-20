@@ -12,6 +12,7 @@ html {
 
 body {
     font-family: Arial, sans-serif;
+    height  : 100vh;
     font-size: 1.6rem;
     line-height: 1.5;
     color: #333;
@@ -29,6 +30,7 @@ ul, ol {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 img {
@@ -43,4 +45,6 @@ button, input, textarea, select {
     background-color: transparent;
     border: none;
     outline: none;
+    cursor: pointer;
 }
+

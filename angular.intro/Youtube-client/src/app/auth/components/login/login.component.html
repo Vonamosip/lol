@@ -1,0 +1,20 @@
+<app-header></app-header>
+<main class="main-container">
+  <div class="login-container">
+      <div class="text-container">
+          <p class="login-text">Login</p>
+      </div>
+      <div class="text-input-container">
+          <p class="login-text-input">login</p>
+          <input type="text" class="input-text" [(ngModel)]="userObj.login">
+      </div>
+      <div class="text-input-container">
+          <p class="login-text-input">password</p>
+          <input type="password" class="input-text" [(ngModel)]="userObj.password">
+      </div>
+      <button class="login-button"   (click)="onLogin()">Login</button>
+  </div>
+</main>
+
+<router-outlet></router-outlet>
+

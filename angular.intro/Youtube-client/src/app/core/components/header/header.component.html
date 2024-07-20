@@ -1,13 +1,14 @@
 <header class="header">
   <div class="search-container">
+    <button class="Logout" (click)="onLogout()">Logout</button>
     <div class="search">
-      <a href="localhost:4200"><img src="icons/logo.png" alt="" class="search-image"></a>
-      <input type="text" class="search-input" placeholder="What are you want to find out?">
+      <a [routerLink]="['']" routerLinkActive="active" ><img src="icons/logo.png" alt="" class="search-image"></a>
+      <app-search></app-search>
       <button class="search-button">Search</button>
       <button class="search-settings" (click)="toggleVisible()"><img src="icons/Vector.png" alt=""></button>
     </div>
     <div class="login-container">
-      <p class="login-name">Your name</p>
+      <p class="login-name">{{userName}}</p>
       <button class="login-button"><img src="icons/login.png" alt=""></button>
     </div>
   </div>
@@ -15,3 +16,4 @@
 @if(visible){
   <app-filter></app-filter>
 }
+<router-outlet></router-outlet>

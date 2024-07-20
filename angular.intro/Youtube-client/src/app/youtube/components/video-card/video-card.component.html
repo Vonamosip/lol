@@ -1,0 +1,31 @@
+
+<app-header></app-header>
+<main class="video-card">
+  <img [src]="objectInfo?.imageUrl" alt="" class="video-card__image">
+  <div class="video-card__text-container">
+      <p class="video-card__title">{{objectInfo?.title}}</p>
+      <p class="video-card__date">{{objectInfo?.publishedAt}}</p>
+      <p class="video-card__description-label">Description:</p>
+      <p class="video-card__description">{{objectInfo?.description}}</p>
+      <div class="video-card__stats">
+          <div class="video-card__stats-item">
+              <img src="icons/viewed.png" alt="views" class="video-card__stats-icon">
+              {{objectInfo?.statistics?.viewCount}}
+          </div>
+          <div class="video-card__stats-item">
+              <img src="icons/liked.png" alt="likes" class="video-card__stats-icon">
+               {{objectInfo?.statistics?.likeCount}}
+          </div>
+          <div class="video-card__stats-item">
+              <img src="icons/dislike.png" alt="dislikes" class="video-card__stats-icon">
+               {{objectInfo?.statistics?.dislikeCount}}
+          </div>
+          <div class="video-card__stats-item">
+              <img src="icons/Group 9.png" alt="commentCount" class="video-card__stats-icon">
+              {{objectInfo?.statistics?.commentCount}}
+          </div>
+      </div>
+  </div>
+</main>
+
+
